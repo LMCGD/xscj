@@ -1,0 +1,73 @@
+package com.xscj.dao;
+
+import java.util.List;
+
+import com.xscj.domain.Course;
+import com.xscj.domain.CourseInfo;
+
+public interface CourseDao {
+	/**
+	 * @author wyf 得到课程总数底层操作接口
+	 * 
+	 * */
+	public int getCourseCount();
+	/**
+	 * 
+	 * @author wyf 得到所有课程列表底层操作接口
+	 * 
+	 * */
+	public List<Course> getAllCourses();
+	
+	/**
+	 * 
+	 * @author wyf 向数据库中添加一条新的课程信息
+	 * */
+	public int addCourseToDb(Course course);
+	
+	/**
+	 * @author wyf 复合查询 课程表 教学安排表
+	 * */
+	
+	public List<Course> getCoursesByGradeAndXueQi(String GradeStr, int xueqi);
+	
+	/**
+	 * @author wyf
+	 * 
+	 * 得到删除标志为false的课程总记录数目
+	 * */
+	public int getValidCourseCount();
+	
+	/**
+	 * @author wyf
+	 * 得到删除标志为false的课程列表
+	 * 
+	 * */
+	public List<Course> getValidAllCourses();
+	
+	/**
+	 * @author wyf
+	 * 
+	 * 模拟删除
+	 * 
+	 * **/
+	
+	public void deleteChoiceCourses(String[] courses);
+	
+	/**
+	 * @author wyf
+	 * 通过课程编号获得课程详细信息
+	 * */
+	public Course getCourseByCourseID(String courseID);
+	
+	/**
+	 * @author wyf
+	 * 获得所有课程的详细信息
+	 * 
+	 * */
+	public List<CourseInfo> getAllCourseInfos();
+	
+	/**
+	 * @author wyf
+	 * */
+	public List<Course> getCoursesEnableDel();
+}

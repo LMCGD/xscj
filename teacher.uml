@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_1g530GyGEeivxeIUVkKevQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_1iDHUWyGEeivxeIUVkKevQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_1iE8gGyGEeivxeIUVkKevQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_1g6e4GyGEeivxeIUVkKevQ" name="UML">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_1g6e4WyGEeivxeIUVkKevQ" name="TeacherManager">
+      <ownedOperation xmi:id="_1iDuYGyGEeivxeIUVkKevQ" name="getTeacherCount" visibility="public">
+        <ownedParameter xmi:id="_1iDuYWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iDuYmyGEeivxeIUVkKevQ" name="addTeacherToDb" visibility="public">
+        <ownedParameter xmi:id="_1iDuY2yGEeivxeIUVkKevQ" name="teacher" type="_1huXNmyGEeivxeIUVkKevQ"/>
+        <ownedParameter xmi:id="_1iDuZGyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iDuZWyGEeivxeIUVkKevQ" name="queryByPage" visibility="public">
+        <ownedParameter xmi:id="_1iDuZmyGEeivxeIUVkKevQ" name="pageSize">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iDuZ2yGEeivxeIUVkKevQ" name="pageNow">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iDuaGyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iDuaWyGEeivxeIUVkKevQ" name="getAllTeacherBh" visibility="public">
+        <ownedParameter xmi:id="_1iDuamyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iDua2yGEeivxeIUVkKevQ" name="getAllSubTeachers" visibility="public">
+        <ownedParameter xmi:id="_1iDubGyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iE8gWyGEeivxeIUVkKevQ" name="getAllSubTeachersByCourseID" visibility="public">
+        <ownedParameter xmi:id="_1iE8gmyGEeivxeIUVkKevQ" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iE8g2yGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iE8hGyGEeivxeIUVkKevQ" name="getValidTeacherCount" visibility="public">
+        <ownedParameter xmi:id="_1iE8hWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iE8hmyGEeivxeIUVkKevQ" name="deleteTeacherByBianHao" visibility="public">
+        <ownedParameter xmi:id="_1iE8h2yGEeivxeIUVkKevQ" name="bianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iFjkGyGEeivxeIUVkKevQ" name="getTeacherNameByTeacherID" visibility="public">
+        <ownedParameter xmi:id="_1iFjkWyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iFjkmyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iFjk2yGEeivxeIUVkKevQ" name="getTeacherInfo" visibility="public">
+        <ownedParameter xmi:id="_1iFjlGyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iFjlWyGEeivxeIUVkKevQ" name="return" type="_1huXNmyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iFjlmyGEeivxeIUVkKevQ" name="updateTeacherInfo" visibility="public">
+        <ownedParameter xmi:id="_1iFjl2yGEeivxeIUVkKevQ" name="teacher" type="_1huXNmyGEeivxeIUVkKevQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iFjmGyGEeivxeIUVkKevQ" name="isExisit" visibility="public">
+        <ownedParameter xmi:id="_1iFjmWyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iFjmmyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iFjm2yGEeivxeIUVkKevQ" name="isExisits" visibility="public">
+        <ownedParameter xmi:id="_1iFjnGyGEeivxeIUVkKevQ" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iFjnWyGEeivxeIUVkKevQ" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iFjnmyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iGKoGyGEeivxeIUVkKevQ" name="updatePass" visibility="public">
+        <ownedParameter xmi:id="_1iGKoWyGEeivxeIUVkKevQ" name="bianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iGKomyGEeivxeIUVkKevQ" name="newPass">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_1g7tAGyGEeivxeIUVkKevQ" name="TeacherDao">
+      <ownedOperation xmi:id="_1iGKo2yGEeivxeIUVkKevQ" name="getTeacherCount" visibility="public">
+        <ownedParameter xmi:id="_1iGKpGyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iGKpWyGEeivxeIUVkKevQ" name="addTeacherToDb" visibility="public">
+        <ownedParameter xmi:id="_1iGKpmyGEeivxeIUVkKevQ" name="teacher" type="_1huXNmyGEeivxeIUVkKevQ"/>
+        <ownedParameter xmi:id="_1iGKp2yGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iGKqGyGEeivxeIUVkKevQ" name="queryByPage" visibility="public">
+        <ownedParameter xmi:id="_1iGKqWyGEeivxeIUVkKevQ" name="pageSize">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iGKqmyGEeivxeIUVkKevQ" name="pageNow">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iGKq2yGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iGKrGyGEeivxeIUVkKevQ" name="getAllTeacherBh" visibility="public">
+        <ownedParameter xmi:id="_1iGKrWyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iGxsGyGEeivxeIUVkKevQ" name="getAllSubTeachers" visibility="public">
+        <ownedParameter xmi:id="_1iGxsWyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iGxsmyGEeivxeIUVkKevQ" name="getAllSubTeachersByCourseID" visibility="public">
+        <ownedParameter xmi:id="_1iGxs2yGEeivxeIUVkKevQ" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iGxtGyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iGxtWyGEeivxeIUVkKevQ" name="getValidTeacherCount" visibility="public">
+        <ownedParameter xmi:id="_1iGxtmyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iGxt2yGEeivxeIUVkKevQ" name="deleteTeacherByBianHao" visibility="public">
+        <ownedParameter xmi:id="_1iGxuGyGEeivxeIUVkKevQ" name="bianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iGxuWyGEeivxeIUVkKevQ" name="getTeacherNameByTeacherID" visibility="public">
+        <ownedParameter xmi:id="_1iGxumyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iGxu2yGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iHYwGyGEeivxeIUVkKevQ" name="getTeacherInfo" visibility="public">
+        <ownedParameter xmi:id="_1iHYwWyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iHYwmyGEeivxeIUVkKevQ" name="return" type="_1huXNmyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iHYw2yGEeivxeIUVkKevQ" name="updateTeacherInfo" visibility="public">
+        <ownedParameter xmi:id="_1iHYxGyGEeivxeIUVkKevQ" name="teacher" type="_1huXNmyGEeivxeIUVkKevQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iHYxWyGEeivxeIUVkKevQ" name="isExisit" visibility="public">
+        <ownedParameter xmi:id="_1iHYxmyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iHYx2yGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iHYyGyGEeivxeIUVkKevQ" name="isExisits" visibility="public">
+        <ownedParameter xmi:id="_1iHYyWyGEeivxeIUVkKevQ" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iHYymyGEeivxeIUVkKevQ" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iHYy2yGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iH_0GyGEeivxeIUVkKevQ" name="updatePass" visibility="public">
+        <ownedParameter xmi:id="_1iH_0WyGEeivxeIUVkKevQ" name="bianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iH_0myGEeivxeIUVkKevQ" name="newPass">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1g8UEGyGEeivxeIUVkKevQ" name="JdbcTeacherDaoImpl" clientDependency="_1iH_02yGEeivxeIUVkKevQ">
+      <ownedAttribute xmi:id="_1iJ1AGyGEeivxeIUVkKevQ" name="jdbcTemplate" visibility="private" type="_1hu-R2yGEeivxeIUVkKevQ"/>
+      <interfaceRealization xmi:id="_1iH_02yGEeivxeIUVkKevQ" name="TeacherDao" supplier="_1g7tAGyGEeivxeIUVkKevQ" client="_1g8UEGyGEeivxeIUVkKevQ" contract="_1g7tAGyGEeivxeIUVkKevQ"/>
+      <ownedOperation xmi:id="_1iLqMGyGEeivxeIUVkKevQ" name="getTeacherCount" visibility="public">
+        <ownedParameter xmi:id="_1iLqMWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iOGcGyGEeivxeIUVkKevQ" name="addTeacherToDb" visibility="public">
+        <ownedParameter xmi:id="_1iOGcWyGEeivxeIUVkKevQ" name="teacher" type="_1huXNmyGEeivxeIUVkKevQ"/>
+        <ownedParameter xmi:id="_1iOGcmyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iP7oGyGEeivxeIUVkKevQ" name="queryByPage" visibility="public">
+        <ownedParameter xmi:id="_1iP7oWyGEeivxeIUVkKevQ" name="pageSize">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iP7omyGEeivxeIUVkKevQ" name="pageNow">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iP7o2yGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iRw0GyGEeivxeIUVkKevQ" name="getAllTeacherBh" visibility="public">
+        <ownedParameter xmi:id="_1iRw0WyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iUNEGyGEeivxeIUVkKevQ" name="getAllSubTeachers" visibility="public">
+        <ownedParameter xmi:id="_1iUNEWyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iWpUGyGEeivxeIUVkKevQ" name="getAllSubTeachersByCourseID" visibility="public">
+        <ownedParameter xmi:id="_1iWpUWyGEeivxeIUVkKevQ" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iWpUmyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iYegGyGEeivxeIUVkKevQ" name="getValidTeacherCount" visibility="public">
+        <ownedParameter xmi:id="_1iYegWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1ia6wGyGEeivxeIUVkKevQ" name="deleteTeacherByBianHao" visibility="public">
+        <ownedParameter xmi:id="_1ia6wWyGEeivxeIUVkKevQ" name="bianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1icv8GyGEeivxeIUVkKevQ" name="getTeacherNameByTeacherID" visibility="public">
+        <ownedParameter xmi:id="_1icv8WyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1icv8myGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1ifMMGyGEeivxeIUVkKevQ" name="getTeacherInfo" visibility="public">
+        <ownedParameter xmi:id="_1ifMMWyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1ifMMmyGEeivxeIUVkKevQ" name="return" type="_1huXNmyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1ihBYGyGEeivxeIUVkKevQ" name="updateTeacherInfo" visibility="public">
+        <ownedParameter xmi:id="_1ihBYWyGEeivxeIUVkKevQ" name="teacher" type="_1huXNmyGEeivxeIUVkKevQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1ii2kGyGEeivxeIUVkKevQ" name="isExisit" visibility="public">
+        <ownedParameter xmi:id="_1ii2kWyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1ii2kmyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1ikrwGyGEeivxeIUVkKevQ" name="isExisits" visibility="public">
+        <ownedParameter xmi:id="_1ikrwWyGEeivxeIUVkKevQ" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1ikrwmyGEeivxeIUVkKevQ" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1ikrw2yGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1inIAGyGEeivxeIUVkKevQ" name="updatePass" visibility="public">
+        <ownedParameter xmi:id="_1inIAWyGEeivxeIUVkKevQ" name="bianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1inIAmyGEeivxeIUVkKevQ" name="newPass">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1g-JQGyGEeivxeIUVkKevQ" name="TeacherManagerImpl" clientDependency="_1io9MGyGEeivxeIUVkKevQ">
+      <ownedAttribute xmi:id="_1ipkQGyGEeivxeIUVkKevQ" name="teacherDao" visibility="private" type="_1g7tAGyGEeivxeIUVkKevQ" association="_1jiVEGyGEeivxeIUVkKevQ"/>
+      <interfaceRealization xmi:id="_1io9MGyGEeivxeIUVkKevQ" name="TeacherManager" supplier="_1g6e4WyGEeivxeIUVkKevQ" client="_1g-JQGyGEeivxeIUVkKevQ" contract="_1g6e4WyGEeivxeIUVkKevQ"/>
+      <ownedOperation xmi:id="_1iqLUGyGEeivxeIUVkKevQ" name="getTeacherCount" visibility="public">
+        <ownedParameter xmi:id="_1iqLUWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iqyYGyGEeivxeIUVkKevQ" name="addTeacherToDb" visibility="public">
+        <ownedParameter xmi:id="_1iqyYWyGEeivxeIUVkKevQ" name="teacher" type="_1huXNmyGEeivxeIUVkKevQ"/>
+        <ownedParameter xmi:id="_1iqyYmyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1irZcGyGEeivxeIUVkKevQ" name="queryByPage" visibility="public">
+        <ownedParameter xmi:id="_1irZcWyGEeivxeIUVkKevQ" name="pageSize">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1irZcmyGEeivxeIUVkKevQ" name="pageNow">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1irZc2yGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1isAgGyGEeivxeIUVkKevQ" name="getAllTeacherBh" visibility="public">
+        <ownedParameter xmi:id="_1isAgWyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1isnkGyGEeivxeIUVkKevQ" name="getAllSubTeachers" visibility="public">
+        <ownedParameter xmi:id="_1isnkWyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1itOoGyGEeivxeIUVkKevQ" name="getAllSubTeachersByCourseID" visibility="public">
+        <ownedParameter xmi:id="_1itOoWyGEeivxeIUVkKevQ" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1itOomyGEeivxeIUVkKevQ" name="return" type="_1huXMWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1it1sGyGEeivxeIUVkKevQ" name="getValidTeacherCount" visibility="public">
+        <ownedParameter xmi:id="_1it1sWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iucwGyGEeivxeIUVkKevQ" name="deleteTeacherByBianHao" visibility="public">
+        <ownedParameter xmi:id="_1iucwWyGEeivxeIUVkKevQ" name="bianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1ivD0GyGEeivxeIUVkKevQ" name="getTeacherNameByTeacherID" visibility="public">
+        <ownedParameter xmi:id="_1ivD0WyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1ivD0myGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1ivq4GyGEeivxeIUVkKevQ" name="getTeacherInfo" visibility="public">
+        <ownedParameter xmi:id="_1ivq4WyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1ivq4myGEeivxeIUVkKevQ" name="return" type="_1huXNmyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iw5AGyGEeivxeIUVkKevQ" name="updateTeacherInfo" visibility="public">
+        <ownedParameter xmi:id="_1iw5AWyGEeivxeIUVkKevQ" name="teacher" type="_1huXNmyGEeivxeIUVkKevQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1ixgEGyGEeivxeIUVkKevQ" name="isExisit" visibility="public">
+        <ownedParameter xmi:id="_1ixgEWyGEeivxeIUVkKevQ" name="teacherBianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1ixgEmyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iyHIGyGEeivxeIUVkKevQ" name="isExisits" visibility="public">
+        <ownedParameter xmi:id="_1iyHIWyGEeivxeIUVkKevQ" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iyHImyGEeivxeIUVkKevQ" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iyHI2yGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_1iyuMGyGEeivxeIUVkKevQ" name="updatePass" visibility="public">
+        <ownedParameter xmi:id="_1iyuMWyGEeivxeIUVkKevQ" name="bianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_1iyuMmyGEeivxeIUVkKevQ" name="newPass">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_1jiVEGyGEeivxeIUVkKevQ" memberEnd="_1ipkQGyGEeivxeIUVkKevQ _1jiVEWyGEeivxeIUVkKevQ">
+      <ownedEnd xmi:id="_1jiVEWyGEeivxeIUVkKevQ" name="TeacherManagerImpl" type="_1g-JQGyGEeivxeIUVkKevQ" association="_1jiVEGyGEeivxeIUVkKevQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_1htwIGyGEeivxeIUVkKevQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_1huXMGyGEeivxeIUVkKevQ" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_1huXMWyGEeivxeIUVkKevQ" name="List"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_1huXOmyGEeivxeIUVkKevQ" name="ArrayList"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_1huXN2yGEeivxeIUVkKevQ" name="sql">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_1huXOGyGEeivxeIUVkKevQ" name="ResultSet"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_1huXOWyGEeivxeIUVkKevQ" name="SQLException"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_1huXMmyGEeivxeIUVkKevQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_1huXM2yGEeivxeIUVkKevQ" name="xscj">
+      <packagedElement xmi:type="uml:Package" xmi:id="_1huXNGyGEeivxeIUVkKevQ" name="domain">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_1huXNWyGEeivxeIUVkKevQ" name="SubTeacher"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_1huXNmyGEeivxeIUVkKevQ" name="Teacher"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_1hu-S2yGEeivxeIUVkKevQ" name="dao">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_1hu-TGyGEeivxeIUVkKevQ" name="TeacherDao"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_1hu-T2yGEeivxeIUVkKevQ" name="service">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_1hu-UGyGEeivxeIUVkKevQ" name="TeacherManager"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_1huXO2yGEeivxeIUVkKevQ" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_1hu-QGyGEeivxeIUVkKevQ" name="springframework">
+      <packagedElement xmi:type="uml:Package" xmi:id="_1hu-QWyGEeivxeIUVkKevQ" name="beans">
+        <packagedElement xmi:type="uml:Package" xmi:id="_1hu-QmyGEeivxeIUVkKevQ" name="factory">
+          <packagedElement xmi:type="uml:Package" xmi:id="_1hu-Q2yGEeivxeIUVkKevQ" name="annotation">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1hu-RGyGEeivxeIUVkKevQ" name="Autowired"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1hu-TWyGEeivxeIUVkKevQ" name="Qualifier"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_1hu-RWyGEeivxeIUVkKevQ" name="jdbc">
+        <packagedElement xmi:type="uml:Package" xmi:id="_1hu-RmyGEeivxeIUVkKevQ" name="core">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_1hu-R2yGEeivxeIUVkKevQ" name="JdbcTemplate"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_1hu-SGyGEeivxeIUVkKevQ" name="RowCallbackHandler"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_1hu-SWyGEeivxeIUVkKevQ" name="stereotype">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_1hu-SmyGEeivxeIUVkKevQ" name="Repository"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_1hu-TmyGEeivxeIUVkKevQ" name="Service"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_pkSa8G-eEei6oMba8HhH_Q">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_pmOUoG-eEei6oMba8HhH_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_pmOUoW-eEei6oMba8HhH_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_pmPizG-eEei6oMba8HhH_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <elementImport xmi:id="_pmVCUW-eEei6oMba8HhH_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_pkTpEG-eEei6oMba8HhH_Q" name="uml">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_pkTpEW-eEei6oMba8HhH_Q" name="ScoreDao">
+      <ownedOperation xmi:id="_pl16IG-eEei6oMba8HhH_Q" name="addScoresToDb" visibility="public">
+        <ownedParameter xmi:id="_pl16IW-eEei6oMba8HhH_Q" name="scores" type="_plyPwm-eEei6oMba8HhH_Q"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmOUom-eEei6oMba8HhH_Q" name="getSimpleScores" visibility="public">
+        <ownedParameter xmi:id="_pmOUo2-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmOUpG-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmOUpW-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmOUpm-eEei6oMba8HhH_Q" name="examTime">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmOUp2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmOUqG-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmOUqW-eEei6oMba8HhH_Q" name="getScoreParts" visibility="public">
+        <ownedParameter xmi:id="_pmOUqm-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmOUq2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmOUrG-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmOUrW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmO7sG-eEei6oMba8HhH_Q" name="getScorePartsByXueHao" visibility="public">
+        <ownedParameter xmi:id="_pmO7sW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmO7sm-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmO7s2-eEei6oMba8HhH_Q" name="getScoreXueqis" visibility="public">
+        <ownedParameter xmi:id="_pmO7tG-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmO7tW-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmO7tm-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmO7t2-eEei6oMba8HhH_Q" name="getScoreByGidCids" visibility="public">
+        <ownedParameter xmi:id="_pmO7uG-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmO7uW-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmO7um-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmO7u2-eEei6oMba8HhH_Q" name="getScoreBySXTs" visibility="public">
+        <ownedParameter xmi:id="_pmO7vG-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmO7vW-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmO7vm-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmO7v2-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmPiwG-eEei6oMba8HhH_Q" name="getscByGCXTs" visibility="public">
+        <ownedParameter xmi:id="_pmPiwW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmPiwm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmPiw2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmPixG-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmPixW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmPixm-eEei6oMba8HhH_Q" name="getScore" visibility="public">
+        <ownedParameter xmi:id="_pmPix2-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmPiyG-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmPiyW-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmPiym-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmPiy2-eEei6oMba8HhH_Q" name="return" type="_ply222-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmQJ0G-eEei6oMba8HhH_Q" name="updateScore" visibility="public">
+        <ownedParameter xmi:id="_pmQJ0W-eEei6oMba8HhH_Q" name="newScore">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQJ0m-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQJ02-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQJ1G-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQJ1W-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmQJ1m-eEei6oMba8HhH_Q" name="getIdNameScores" visibility="public">
+        <ownedParameter xmi:id="_pmQJ12-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQJ2G-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQJ2W-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQJ2m-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQJ22-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmQw4G-eEei6oMba8HhH_Q" name="updateScores" visibility="public">
+        <ownedParameter xmi:id="_pmQw4W-eEei6oMba8HhH_Q" name="stuXueHaos" type="_plyPwm-eEei6oMba8HhH_Q"/>
+        <ownedParameter xmi:id="_pmQw4m-eEei6oMba8HhH_Q" name="scores" type="_plyPwm-eEei6oMba8HhH_Q"/>
+        <ownedParameter xmi:id="_pmQw42-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQw5G-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQw5W-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQw5m-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmQw52-eEei6oMba8HhH_Q" name="deleteStuScore" visibility="public">
+        <ownedParameter xmi:id="_pmQw6G-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQw6W-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQw6m-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmQw62-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmRX8G-eEei6oMba8HhH_Q" name="deleteStuScores" visibility="public">
+        <ownedParameter xmi:id="_pmRX8W-eEei6oMba8HhH_Q" name="stuXueHaos" type="_plyPwm-eEei6oMba8HhH_Q"/>
+        <ownedParameter xmi:id="_pmRX8m-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmRX82-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmRX9G-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmRX9W-eEei6oMba8HhH_Q" name="getScoreCounts" visibility="public">
+        <ownedParameter xmi:id="_pmRX9m-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmRX92-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmRX-G-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmRX-W-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmR_AG-eEei6oMba8HhH_Q" name="getCount" visibility="public">
+        <ownedParameter xmi:id="_pmR_AW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmR_Am-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmR_A2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmR_BG-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmR_BW-eEei6oMba8HhH_Q" name="getCount" visibility="public">
+        <ownedParameter xmi:id="_pmR_Bm-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmR_B2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmR_CG-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmR_CW-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmR_Cm-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmR_C2-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pmR_DG-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmR_DW-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmSmEG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pmSmEW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmSmEm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmSmE2-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmSmFG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pmSmFW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmSmFm-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmSmF2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmSmGG-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmTNIG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pmTNIW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmTNIm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmTNI2-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmTNJG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pmTNJW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmTNJm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmTNJ2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmTNKG-eEei6oMba8HhH_Q" name="examTypeString">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmTNKW-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmT0MG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pmT0MW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmT0Mm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmT0M2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmT0NG-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmT0NW-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmT0Nm-eEei6oMba8HhH_Q" name="isExisits" visibility="public">
+        <ownedParameter xmi:id="_pmT0N2-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmT0OG-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmT0OW-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmT0Om-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmUbQG-eEei6oMba8HhH_Q" name="getStuScoreCounts" visibility="public">
+        <ownedParameter xmi:id="_pmUbQW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmUbQm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmUbQ2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmUbRG-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmUbRW-eEei6oMba8HhH_Q" name="getScoreGroups" visibility="public">
+        <ownedParameter xmi:id="_pmUbRm-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmUbR2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmUbSG-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pmUbSW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pkU3MG-eEei6oMba8HhH_Q" name="ScoreAnalyzeAction">
+      <ownedComment xmi:id="_pkWFUG-eEei6oMba8HhH_Q">
+        <body>/** 
+ * @author wyf
+ * @date 2018-4-3 上午8:06:13对某个学生的所有成绩进行整体分析
+ */
+</body>
+      </ownedComment>
+      <generalization xmi:id="_pmVCUG-eEei6oMba8HhH_Q" general="_pl0E-W-eEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_pmWQcG-eEei6oMba8HhH_Q" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+        <ownedComment xmi:id="_pmXekG-eEei6oMba8HhH_Q">
+          <body>/** 
+ */
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pmYssG-eEei6oMba8HhH_Q" name="scoreService" visibility="private" type="_pkXTcG-eEei6oMba8HhH_Q" association="_polFEG-eEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_pmbI8G-eEei6oMba8HhH_Q" name="chart" visibility="private" type="_plzd42-eEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_pmc-IG-eEei6oMba8HhH_Q" name="stuXueHao" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pmfaYG-eEei6oMba8HhH_Q" name="stuName" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pmh2oG-eEei6oMba8HhH_Q" name="year" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pmkS4G-eEei6oMba8HhH_Q" name="classID" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pmmvIG-eEei6oMba8HhH_Q" name="scoreParts" visibility="private" type="_pmlhAG-eEei6oMba8HhH_Q"/>
+      <ownedOperation xmi:id="_pmn9QG-eEei6oMba8HhH_Q" name="getChart" visibility="public">
+        <ownedParameter xmi:id="_pmn9QW-eEei6oMba8HhH_Q" name="return" type="_plzd42-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmpLYG-eEei6oMba8HhH_Q" name="getDataSet" visibility="private">
+        <ownedParameter xmi:id="_pmpLYW-eEei6oMba8HhH_Q" name="return" type="_pl0E8G-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmqZgG-eEei6oMba8HhH_Q" name="setChart" visibility="public">
+        <ownedParameter xmi:id="_pmqZgW-eEei6oMba8HhH_Q" name="chart" type="_plzd42-eEei6oMba8HhH_Q"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmrnoG-eEei6oMba8HhH_Q" name="getYear" visibility="public">
+        <ownedParameter xmi:id="_pmrnoW-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pms1wG-eEei6oMba8HhH_Q" name="setYear" visibility="public">
+        <ownedParameter xmi:id="_pms1wW-eEei6oMba8HhH_Q" name="year">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmuD4G-eEei6oMba8HhH_Q" name="getClassID" visibility="public">
+        <ownedParameter xmi:id="_pmuD4W-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmvSAG-eEei6oMba8HhH_Q" name="setClassID" visibility="public">
+        <ownedParameter xmi:id="_pmvSAW-eEei6oMba8HhH_Q" name="classID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmwgIG-eEei6oMba8HhH_Q" name="getStuName" visibility="public">
+        <ownedParameter xmi:id="_pmwgIW-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmxuQG-eEei6oMba8HhH_Q" name="setStuName" visibility="public">
+        <ownedParameter xmi:id="_pmxuQW-eEei6oMba8HhH_Q" name="stuName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pmy8YG-eEei6oMba8HhH_Q" name="getStuXueHao" visibility="public">
+        <ownedParameter xmi:id="_pmy8YW-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pm0KgG-eEei6oMba8HhH_Q" name="setStuXueHao" visibility="public">
+        <ownedParameter xmi:id="_pm0KgW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pm1YoG-eEei6oMba8HhH_Q" name="getScoreParts" visibility="public">
+        <ownedParameter xmi:id="_pm1YoW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pm3N0G-eEei6oMba8HhH_Q" name="setScoreParts" visibility="public">
+        <ownedParameter xmi:id="_pm3N0W-eEei6oMba8HhH_Q" name="scoreParts" type="_plyPwm-eEei6oMba8HhH_Q"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pm4b8G-eEei6oMba8HhH_Q" name="validate" visibility="public"/>
+      <ownedOperation xmi:id="_3FlcwG-eEei6oMba8HhH_Q" name="Operation1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pkWFUW-eEei6oMba8HhH_Q" name="ScoreServiceImpl" clientDependency="_pm5qEG-eEei6oMba8HhH_Q">
+      <ownedAttribute xmi:id="_pm64MG-eEei6oMba8HhH_Q" name="scoreDao" visibility="private" type="_pkTpEW-eEei6oMba8HhH_Q" association="_polFEm-eEei6oMba8HhH_Q"/>
+      <interfaceRealization xmi:id="_pm5qEG-eEei6oMba8HhH_Q" name="ScoreService" supplier="_pkXTcG-eEei6oMba8HhH_Q" client="_pkWFUW-eEei6oMba8HhH_Q" contract="_pkXTcG-eEei6oMba8HhH_Q"/>
+      <ownedOperation xmi:id="_pm8GUG-eEei6oMba8HhH_Q" name="addScoresToDb" visibility="public">
+        <ownedParameter xmi:id="_pm8GUW-eEei6oMba8HhH_Q" name="scores" type="_plyPwm-eEei6oMba8HhH_Q"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pm9UcG-eEei6oMba8HhH_Q" name="getSimpleScores" visibility="public">
+        <ownedParameter xmi:id="_pm9UcW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pm9Ucm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pm9Uc2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pm9UdG-eEei6oMba8HhH_Q" name="examTime">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pm9UdW-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pm9Udm-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pm-ikG-eEei6oMba8HhH_Q" name="getScoreParts" visibility="public">
+        <ownedParameter xmi:id="_pm-ikW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pm-ikm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pm-ik2-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pm-ilG-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pm_JoG-eEei6oMba8HhH_Q" name="getScorePartsByXueHao" visibility="public">
+        <ownedParameter xmi:id="_pm_JoW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pm_Jom-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnAXwG-eEei6oMba8HhH_Q" name="getScoreXueqis" visibility="public">
+        <ownedParameter xmi:id="_pnAXwW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnAXwm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnAXw2-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnBl4G-eEei6oMba8HhH_Q" name="getScoreByGidCids" visibility="public">
+        <ownedParameter xmi:id="_pnBl4W-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnBl4m-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnBl42-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnC0AG-eEei6oMba8HhH_Q" name="getScoreBySXTs" visibility="public">
+        <ownedParameter xmi:id="_pnC0AW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnC0Am-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnC0A2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnC0BG-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnECIG-eEei6oMba8HhH_Q" name="getscByGCXTs" visibility="public">
+        <ownedParameter xmi:id="_pnECIW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnECIm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnECI2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnECJG-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnECJW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnFQQG-eEei6oMba8HhH_Q" name="getScore" visibility="public">
+        <ownedParameter xmi:id="_pnFQQW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnFQQm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnFQQ2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnFQRG-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnFQRW-eEei6oMba8HhH_Q" name="return" type="_ply222-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnGeYG-eEei6oMba8HhH_Q" name="updateScore" visibility="public">
+        <ownedParameter xmi:id="_pnGeYW-eEei6oMba8HhH_Q" name="newScore">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnGeYm-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnGeY2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnGeZG-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnGeZW-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnHsgG-eEei6oMba8HhH_Q" name="getIdNameScores" visibility="public">
+        <ownedParameter xmi:id="_pnHsgW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnHsgm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnHsg2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnHshG-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnHshW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnI6oG-eEei6oMba8HhH_Q" name="updateScores" visibility="public">
+        <ownedParameter xmi:id="_pnI6oW-eEei6oMba8HhH_Q" name="stuXueHaos" type="_plyPwm-eEei6oMba8HhH_Q"/>
+        <ownedParameter xmi:id="_pnI6om-eEei6oMba8HhH_Q" name="scores" type="_plyPwm-eEei6oMba8HhH_Q"/>
+        <ownedParameter xmi:id="_pnI6o2-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnI6pG-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnI6pW-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnI6pm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnKIwG-eEei6oMba8HhH_Q" name="deleteStuScore" visibility="public">
+        <ownedParameter xmi:id="_pnKIwW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnKIwm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnKIw2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnKIxG-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnL98G-eEei6oMba8HhH_Q" name="deleteStuScores" visibility="public">
+        <ownedParameter xmi:id="_pnL98W-eEei6oMba8HhH_Q" name="stuXueHaos" type="_plyPwm-eEei6oMba8HhH_Q"/>
+        <ownedParameter xmi:id="_pnL98m-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnL982-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnL99G-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnNMEG-eEei6oMba8HhH_Q" name="getScoreCounts" visibility="public">
+        <ownedParameter xmi:id="_pnNMEW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnNMEm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnNME2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnNMFG-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnOaMG-eEei6oMba8HhH_Q" name="getCount" visibility="public">
+        <ownedParameter xmi:id="_pnOaMW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnOaMm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnOaM2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnOaNG-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnPoUG-eEei6oMba8HhH_Q" name="getCount" visibility="public">
+        <ownedParameter xmi:id="_pnPoUW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnPoUm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnPoU2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnPoVG-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnPoVW-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnQ2cG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pnQ2cW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnQ2cm-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnSEkG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pnSEkW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnSEkm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnSEk2-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnTSsG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pnTSsW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnTSsm-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnTSs2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnTStG-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnUg0G-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pnUg0W-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnUg0m-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnUg02-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnVu8G-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pnVu8W-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnVu8m-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnVu82-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnVu9G-eEei6oMba8HhH_Q" name="examTypeString">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnVu9W-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnW9EG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pnW9EW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnW9Em-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnW9E2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnW9FG-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnW9FW-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnYyQG-eEei6oMba8HhH_Q" name="isExisits" visibility="public">
+        <ownedParameter xmi:id="_pnYyQW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnYyQm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnYyQ2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnYyRG-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnaAYG-eEei6oMba8HhH_Q" name="getStuScoreCounts" visibility="public">
+        <ownedParameter xmi:id="_pnaAYW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnaAYm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnaAY2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnaAZG-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnbOgG-eEei6oMba8HhH_Q" name="getScoreGroups" visibility="public">
+        <ownedParameter xmi:id="_pnbOgW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnbOgm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnbOg2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnbOhG-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_pkXTcG-eEei6oMba8HhH_Q" name="ScoreService">
+      <ownedOperation xmi:id="_pnccoG-eEei6oMba8HhH_Q" name="addScoresToDb" visibility="public">
+        <ownedParameter xmi:id="_pnccoW-eEei6oMba8HhH_Q" name="scores" type="_plyPwm-eEei6oMba8HhH_Q"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnccom-eEei6oMba8HhH_Q" name="getSimpleScores" visibility="public">
+        <ownedParameter xmi:id="_pncco2-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnccpG-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnccpW-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnccpm-eEei6oMba8HhH_Q" name="examTime">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnccp2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnccqG-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnccqW-eEei6oMba8HhH_Q" name="getScoreParts" visibility="public">
+        <ownedParameter xmi:id="_pnccqm-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnccq2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnccrG-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnccrW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnccrm-eEei6oMba8HhH_Q" name="getScorePartsByXueHao" visibility="public">
+        <ownedParameter xmi:id="_pndDsG-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndDsW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pndDsm-eEei6oMba8HhH_Q" name="getScoreXueqis" visibility="public">
+        <ownedParameter xmi:id="_pndDs2-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndDtG-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndDtW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pndDtm-eEei6oMba8HhH_Q" name="getScoreByGidCids" visibility="public">
+        <ownedParameter xmi:id="_pndDt2-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndDuG-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndDuW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pndDum-eEei6oMba8HhH_Q" name="getScoreBySXTs" visibility="public">
+        <ownedParameter xmi:id="_pndDu2-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndDvG-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndDvW-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndDvm-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pndqwG-eEei6oMba8HhH_Q" name="getscByGCXTs" visibility="public">
+        <ownedParameter xmi:id="_pndqwW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndqwm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndqw2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndqxG-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndqxW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pndqxm-eEei6oMba8HhH_Q" name="getScore" visibility="public">
+        <ownedParameter xmi:id="_pndqx2-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndqyG-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndqyW-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndqym-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndqy2-eEei6oMba8HhH_Q" name="return" type="_ply222-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pndqzG-eEei6oMba8HhH_Q" name="updateScore" visibility="public">
+        <ownedParameter xmi:id="_pndqzW-eEei6oMba8HhH_Q" name="newScore">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndqzm-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndqz2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndq0G-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pndq0W-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pneR0G-eEei6oMba8HhH_Q" name="getIdNameScores" visibility="public">
+        <ownedParameter xmi:id="_pneR0W-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pneR0m-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pneR02-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pneR1G-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pneR1W-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pneR1m-eEei6oMba8HhH_Q" name="updateScores" visibility="public">
+        <ownedParameter xmi:id="_pneR12-eEei6oMba8HhH_Q" name="stuXueHaos" type="_plyPwm-eEei6oMba8HhH_Q"/>
+        <ownedParameter xmi:id="_pneR2G-eEei6oMba8HhH_Q" name="scores" type="_plyPwm-eEei6oMba8HhH_Q"/>
+        <ownedParameter xmi:id="_pneR2W-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pneR2m-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pneR22-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pneR3G-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pne44G-eEei6oMba8HhH_Q" name="deleteStuScore" visibility="public">
+        <ownedParameter xmi:id="_pne44W-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pne44m-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pne442-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pne45G-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnff8G-eEei6oMba8HhH_Q" name="deleteStuScores" visibility="public">
+        <ownedParameter xmi:id="_pnff8W-eEei6oMba8HhH_Q" name="stuXueHaos" type="_plyPwm-eEei6oMba8HhH_Q"/>
+        <ownedParameter xmi:id="_pnff8m-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnff82-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnff9G-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnff9W-eEei6oMba8HhH_Q" name="getScoreCounts" visibility="public">
+        <ownedParameter xmi:id="_pnff9m-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnff92-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnff-G-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnff-W-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnff-m-eEei6oMba8HhH_Q" name="getCount" visibility="public">
+        <ownedParameter xmi:id="_pnff-2-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnff_G-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnff_W-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnff_m-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pngHAG-eEei6oMba8HhH_Q" name="getCount" visibility="public">
+        <ownedParameter xmi:id="_pngHAW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pngHAm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pngHA2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pngHBG-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pngHBW-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pngHBm-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pngHB2-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pngHCG-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnguEG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pnguEW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnguEm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnguE2-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnguFG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pnguFW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnguFm-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnguF2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnguGG-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnguGW-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pnguGm-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnguG2-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnguHG-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnhVIG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pnhVIW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnhVIm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnhVI2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnhVJG-eEei6oMba8HhH_Q" name="examTypeString">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnhVJW-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnh8MG-eEei6oMba8HhH_Q" name="hasScoreRecord" visibility="public">
+        <ownedParameter xmi:id="_pnh8MW-eEei6oMba8HhH_Q" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnh8Mm-eEei6oMba8HhH_Q" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnh8M2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnh8NG-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnh8NW-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnh8Nm-eEei6oMba8HhH_Q" name="isExisits" visibility="public">
+        <ownedParameter xmi:id="_pnh8N2-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnh8OG-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnh8OW-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnh8Om-eEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnijQG-eEei6oMba8HhH_Q" name="getStuScoreCounts" visibility="public">
+        <ownedParameter xmi:id="_pnijQW-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnijQm-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnijQ2-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnijRG-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pnijRW-eEei6oMba8HhH_Q" name="getScoreGroups" visibility="public">
+        <ownedParameter xmi:id="_pnijRm-eEei6oMba8HhH_Q" name="gradeID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnijR2-eEei6oMba8HhH_Q" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnijSG-eEei6oMba8HhH_Q" name="examType">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pnijSW-eEei6oMba8HhH_Q" name="return" type="_plyPwm-eEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_polFEG-eEei6oMba8HhH_Q" memberEnd="_pmYssG-eEei6oMba8HhH_Q _polFEW-eEei6oMba8HhH_Q">
+      <ownedEnd xmi:id="_polFEW-eEei6oMba8HhH_Q" name="ScoreAnalyzeAction" type="_pkU3MG-eEei6oMba8HhH_Q" association="_polFEG-eEei6oMba8HhH_Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_polFEm-eEei6oMba8HhH_Q" memberEnd="_pm64MG-eEei6oMba8HhH_Q _polFE2-eEei6oMba8HhH_Q">
+      <ownedEnd xmi:id="_polFE2-eEei6oMba8HhH_Q" name="ScoreServiceImpl" type="_pkWFUW-eEei6oMba8HhH_Q" association="_polFEm-eEei6oMba8HhH_Q"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_plyPwG-eEei6oMba8HhH_Q" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_plyPwW-eEei6oMba8HhH_Q" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_plyPwm-eEei6oMba8HhH_Q" name="List"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ply23W-eEei6oMba8HhH_Q" name="awt">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_ply23m-eEei6oMba8HhH_Q" name="Font"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ply232-eEei6oMba8HhH_Q" name="geom">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply24G-eEei6oMba8HhH_Q" name="Rectangle2D"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_plyPw2-eEei6oMba8HhH_Q" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ply20G-eEei6oMba8HhH_Q" name="xscj">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ply20W-eEei6oMba8HhH_Q" name="domain">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply20m-eEei6oMba8HhH_Q" name="IDNameScore"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply202-eEei6oMba8HhH_Q" name="Score"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply21G-eEei6oMba8HhH_Q" name="ScoreByGCXT"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply21W-eEei6oMba8HhH_Q" name="ScoreByGidCid"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply21m-eEei6oMba8HhH_Q" name="ScoreBySXT"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply212-eEei6oMba8HhH_Q" name="ScoreCount"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply22G-eEei6oMba8HhH_Q" name="ScoreGroup"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply22W-eEei6oMba8HhH_Q" name="ScorePart"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply22m-eEei6oMba8HhH_Q" name="ScoreXueqi"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply222-eEei6oMba8HhH_Q" name="SimpleScore"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ply23G-eEei6oMba8HhH_Q" name="StuScoreCount"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_pl0E-m-eEei6oMba8HhH_Q" name="service">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_pl0E-2-eEei6oMba8HhH_Q" name="ScoreService"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_pl0E_m-eEei6oMba8HhH_Q" name="dao">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_pl0E_2-eEei6oMba8HhH_Q" name="ScoreDao"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_pl0E92-eEei6oMba8HhH_Q" name="opensymphony">
+      <packagedElement xmi:type="uml:Package" xmi:id="_pl0E-G-eEei6oMba8HhH_Q" name="xwork2">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_pl0E-W-eEei6oMba8HhH_Q" name="ActionSupport"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ply24W-eEei6oMba8HhH_Q" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_plzd4G-eEei6oMba8HhH_Q" name="jfree">
+      <packagedElement xmi:type="uml:Package" xmi:id="_plzd4W-eEei6oMba8HhH_Q" name="chart">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_plzd4m-eEei6oMba8HhH_Q" name="ChartFactory"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_plzd42-eEei6oMba8HhH_Q" name="JFreeChart"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_plzd5G-eEei6oMba8HhH_Q" name="axis">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_plzd5W-eEei6oMba8HhH_Q" name="CategoryAxis"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_plzd5m-eEei6oMba8HhH_Q" name="CategoryLabelPositions"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_plzd52-eEei6oMba8HhH_Q" name="NumberAxis"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_plzd6G-eEei6oMba8HhH_Q" name="labels">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_plzd6W-eEei6oMba8HhH_Q" name="StandardCategoryItemLabelGenerator"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_plzd6m-eEei6oMba8HhH_Q" name="plot">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_plzd62-eEei6oMba8HhH_Q" name="CategoryPlot"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_plzd7G-eEei6oMba8HhH_Q" name="PlotOrientation"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_plzd7W-eEei6oMba8HhH_Q" name="renderer">
+          <packagedElement xmi:type="uml:Package" xmi:id="_plzd7m-eEei6oMba8HhH_Q" name="category">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_plzd72-eEei6oMba8HhH_Q" name="CategoryItemRenderer"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_plzd8G-eEei6oMba8HhH_Q" name="LineAndShapeRenderer"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_plzd8W-eEei6oMba8HhH_Q" name="title">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_plzd8m-eEei6oMba8HhH_Q" name="LegendTitle"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_plzd82-eEei6oMba8HhH_Q" name="TextTitle"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_plzd9G-eEei6oMba8HhH_Q" name="data">
+        <packagedElement xmi:type="uml:Package" xmi:id="_plzd9W-eEei6oMba8HhH_Q" name="category">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_pl0E8G-eEei6oMba8HhH_Q" name="DefaultCategoryDataset"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_pl0E8W-eEei6oMba8HhH_Q" name="springframework">
+      <packagedElement xmi:type="uml:Package" xmi:id="_pl0E8m-eEei6oMba8HhH_Q" name="beans">
+        <packagedElement xmi:type="uml:Package" xmi:id="_pl0E82-eEei6oMba8HhH_Q" name="factory">
+          <packagedElement xmi:type="uml:Package" xmi:id="_pl0E9G-eEei6oMba8HhH_Q" name="annotation">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_pl0E9W-eEei6oMba8HhH_Q" name="Autowired"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_pl0E9m-eEei6oMba8HhH_Q" name="Qualifier"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_pl0E_G-eEei6oMba8HhH_Q" name="stereotype">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_pl0E_W-eEei6oMba8HhH_Q" name="Service"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_pmlhAG-eEei6oMba8HhH_Q" name="List&lt;ScorePart>"/>
+</uml:Model>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_KE6sAG-IEei6oMba8HhH_Q">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_KJGocG-IEei6oMba8HhH_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:id="_KJSOoG-IEei6oMba8HhH_Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_KGk44G-IEei6oMba8HhH_Q" name="uml">
+    <packagedElement xmi:type="uml:Class" xmi:id="_KGlf8G-IEei6oMba8HhH_Q" name="TeacherMainAction">
+      <ownedComment xmi:id="_KGpKUG-IEei6oMba8HhH_Q">
+        <body>/** 
+ * @author wyf
+ */
+</body>
+      </ownedComment>
+      <generalization xmi:id="_KIgykG-IEei6oMba8HhH_Q" general="_KIeWWW-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KJH2kG-IEei6oMba8HhH_Q" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+        <ownedComment xmi:id="_KJJEsG-IEei6oMba8HhH_Q">
+          <body>/** 
+ */
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_KJH2kW-IEei6oMba8HhH_Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KJKS0G-IEei6oMba8HhH_Q" name="teachingArrange" visibility="private" type="_KIe9ZG-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KJNWIG-IEei6oMba8HhH_Q" name="teacherManager" visibility="private" type="_KIe9Y2-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KJRAgG-IEei6oMba8HhH_Q" name="teachingTables" visibility="private" type="_KJPyYG-IEei6oMba8HhH_Q"/>
+      <ownedOperation xmi:id="_KJSOoW-IEei6oMba8HhH_Q" name="execute" visibility="public">
+        <ownedParameter xmi:id="_KJSOom-IEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KJTcwG-IEei6oMba8HhH_Q" name="validate" visibility="public"/>
+      <ownedOperation xmi:id="_KJUq4G-IEei6oMba8HhH_Q" name="getTeachingTables" visibility="public">
+        <ownedParameter xmi:id="_KJUq4W-IEei6oMba8HhH_Q" name="return" type="_KIdvQm-IEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KJWgEG-IEei6oMba8HhH_Q" name="setTeachingTables" visibility="public">
+        <ownedParameter xmi:id="_KJWgEW-IEei6oMba8HhH_Q" name="teachingTables" type="_KIdvQm-IEei6oMba8HhH_Q"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KGpKUW-IEei6oMba8HhH_Q" name="StuMainAction">
+      <generalization xmi:id="_KJXuMG-IEei6oMba8HhH_Q" general="_KIeWWW-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KJYVQG-IEei6oMba8HhH_Q" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+        <ownedComment xmi:id="_KJZjYG-IEei6oMba8HhH_Q">
+          <body>/** 
+ */
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_KJYVQW-IEei6oMba8HhH_Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KJaxgG-IEei6oMba8HhH_Q" name="gradeSetUp" visibility="private" type="_KIe9Z2-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KJd00G-IEei6oMba8HhH_Q" name="stuService" visibility="private" type="_KIe9aG-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KJg4IG-IEei6oMba8HhH_Q" name="grade" visibility="private" type="_KIe9ZW-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KJjUYG-IEei6oMba8HhH_Q" name="subStudent" visibility="private" type="_KIe9Zm-IEei6oMba8HhH_Q"/>
+      <ownedOperation xmi:id="_KJlJkG-IEei6oMba8HhH_Q" name="execute" visibility="public">
+        <ownedParameter xmi:id="_KJlJkW-IEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KJmXsG-IEei6oMba8HhH_Q" name="validate" visibility="public"/>
+      <ownedOperation xmi:id="_KJnl0G-IEei6oMba8HhH_Q" name="getGrade" visibility="public">
+        <ownedParameter xmi:id="_KJnl0W-IEei6oMba8HhH_Q" name="return" type="_KIe9ZW-IEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KJpbAG-IEei6oMba8HhH_Q" name="setGrade" visibility="public">
+        <ownedParameter xmi:id="_KJpbAW-IEei6oMba8HhH_Q" name="grade" type="_KIe9ZW-IEei6oMba8HhH_Q"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KJrQMG-IEei6oMba8HhH_Q" name="getSubStudent" visibility="public">
+        <ownedParameter xmi:id="_KJrQMW-IEei6oMba8HhH_Q" name="return" type="_KIe9Zm-IEei6oMba8HhH_Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KJtFYG-IEei6oMba8HhH_Q" name="setSubStudent" visibility="public">
+        <ownedParameter xmi:id="_KJtFYW-IEei6oMba8HhH_Q" name="subStudent" type="_KIe9Zm-IEei6oMba8HhH_Q"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KGq_gG-IEei6oMba8HhH_Q" name="AdminMainAction">
+      <ownedComment xmi:id="_KGrmkG-IEei6oMba8HhH_Q">
+        <body>/** 
+ * @author wyf
+ * @date 2018-4-19 &#x4e0a;&#x5348;6:59:13
+ */
+</body>
+      </ownedComment>
+      <generalization xmi:id="_KJuTgG-IEei6oMba8HhH_Q" general="_KIeWWW-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KJu6kG-IEei6oMba8HhH_Q" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+        <ownedComment xmi:id="_KJvhoG-IEei6oMba8HhH_Q">
+          <body>/** 
+ */
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_KJu6kW-IEei6oMba8HhH_Q"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KJvhoW-IEei6oMba8HhH_Q" name="execute" visibility="public">
+        <ownedParameter xmi:id="_KJvhom-IEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KJwIsG-IEei6oMba8HhH_Q" name="validate" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KGrmkW-IEei6oMba8HhH_Q" name="LoginJudgeAction">
+      <ownedComment xmi:id="_KGuC0G-IEei6oMba8HhH_Q">
+        <body>/** 
+ * @author wyf
+ */
+</body>
+      </ownedComment>
+      <generalization xmi:id="_KJwvwG-IEei6oMba8HhH_Q" general="_KIeWWW-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KJyk8G-IEei6oMba8HhH_Q" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+        <ownedComment xmi:id="_KJ0aIG-IEei6oMba8HhH_Q">
+          <body>/** 
+ */
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_KJyk8W-IEei6oMba8HhH_Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KJ2PUG-IEei6oMba8HhH_Q" name="stuService" visibility="private" type="_KIe9aG-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KJ5SoG-IEei6oMba8HhH_Q" name="teacherManager" visibility="private" type="_KIe9Y2-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KJ89AG-IEei6oMba8HhH_Q" name="administratorManager" visibility="private" type="_KIfkdm-IEei6oMba8HhH_Q"/>
+      <ownedAttribute xmi:id="_KKAAUG-IEei6oMba8HhH_Q" name="username" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KKDqsG-IEei6oMba8HhH_Q" name="password" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KKGuAG-IEei6oMba8HhH_Q" name="certCode" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KKJKQG-IEei6oMba8HhH_Q" name="userRole" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KKMNkG-IEei6oMba8HhH_Q" name="result" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_KKNbsG-IEei6oMba8HhH_Q" name="getResult" visibility="public">
+        <ownedParameter xmi:id="_KKNbsW-IEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KKPQ4G-IEei6oMba8HhH_Q" name="setResult" visibility="public">
+        <ownedParameter xmi:id="_KKPQ4W-IEei6oMba8HhH_Q" name="result">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KKRGEG-IEei6oMba8HhH_Q" name="execute" visibility="public">
+        <ownedParameter xmi:id="_KKRGEW-IEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KKSUMG-IEei6oMba8HhH_Q" name="getUsername" visibility="public">
+        <ownedParameter xmi:id="_KKSUMW-IEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KKUJYG-IEei6oMba8HhH_Q" name="setUsername" visibility="public">
+        <ownedParameter xmi:id="_KKUJYW-IEei6oMba8HhH_Q" name="username">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KKVXgG-IEei6oMba8HhH_Q" name="getPassword" visibility="public">
+        <ownedParameter xmi:id="_KKVXgW-IEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KKXMsG-IEei6oMba8HhH_Q" name="setPassword" visibility="public">
+        <ownedParameter xmi:id="_KKXMsW-IEei6oMba8HhH_Q" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KKYa0G-IEei6oMba8HhH_Q" name="getCertCode" visibility="public">
+        <ownedParameter xmi:id="_KKYa0W-IEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KKaQAG-IEei6oMba8HhH_Q" name="setCertCode" visibility="public">
+        <ownedParameter xmi:id="_KKaQAW-IEei6oMba8HhH_Q" name="certCode">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KKcFMG-IEei6oMba8HhH_Q" name="getUserRole" visibility="public">
+        <ownedParameter xmi:id="_KKcFMW-IEei6oMba8HhH_Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KKehcG-IEei6oMba8HhH_Q" name="setUserRole" visibility="public">
+        <ownedParameter xmi:id="_KKehcW-IEei6oMba8HhH_Q" name="userRole">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_KIdvQG-IEei6oMba8HhH_Q" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_KIdvQW-IEei6oMba8HhH_Q" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_KIdvQm-IEei6oMba8HhH_Q" name="List"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_KIfkcG-IEei6oMba8HhH_Q" name="HashMap"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_KIfkcW-IEei6oMba8HhH_Q" name="Map"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_KIdvQ2-IEei6oMba8HhH_Q" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_KIdvRG-IEei6oMba8HhH_Q" name="springframework">
+      <packagedElement xmi:type="uml:Package" xmi:id="_KIeWUG-IEei6oMba8HhH_Q" name="beans">
+        <packagedElement xmi:type="uml:Package" xmi:id="_KIeWUW-IEei6oMba8HhH_Q" name="factory">
+          <packagedElement xmi:type="uml:Package" xmi:id="_KIeWUm-IEei6oMba8HhH_Q" name="annotation">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_KIeWU2-IEei6oMba8HhH_Q" name="Autowired"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_KIeWVG-IEei6oMba8HhH_Q" name="Qualifier"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_KIeWVW-IEei6oMba8HhH_Q" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_KIeWVm-IEei6oMba8HhH_Q" name="opensymphony">
+      <packagedElement xmi:type="uml:Package" xmi:id="_KIeWV2-IEei6oMba8HhH_Q" name="xwork2">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIeWWG-IEei6oMba8HhH_Q" name="ActionContext"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIeWWW-IEei6oMba8HhH_Q" name="ActionSupport"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_KIeWWm-IEei6oMba8HhH_Q" name="xscj">
+      <packagedElement xmi:type="uml:Package" xmi:id="_KIe9YG-IEei6oMba8HhH_Q" name="domain">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIe9YW-IEei6oMba8HhH_Q" name="TeachingTable"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIe9ZW-IEei6oMba8HhH_Q" name="Grade"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIe9Zm-IEei6oMba8HhH_Q" name="SubStudent"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_KIe9Ym-IEei6oMba8HhH_Q" name="service">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIe9Y2-IEei6oMba8HhH_Q" name="TeacherManager"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIe9ZG-IEei6oMba8HhH_Q" name="TeachingArrange"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIe9Z2-IEei6oMba8HhH_Q" name="GradeSetUp"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIe9aG-IEei6oMba8HhH_Q" name="StuService"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIfkdm-IEei6oMba8HhH_Q" name="AdministratorManager"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_KIfkd2-IEei6oMba8HhH_Q" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIfkeG-IEei6oMba8HhH_Q" name="Util"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_KIfkcm-IEei6oMba8HhH_Q" name="net">
+    <packagedElement xmi:type="uml:Package" xmi:id="_KIfkc2-IEei6oMba8HhH_Q" name="sf">
+      <packagedElement xmi:type="uml:Package" xmi:id="_KIfkdG-IEei6oMba8HhH_Q" name="json">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_KIfkdW-IEei6oMba8HhH_Q" name="JSONObject"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_KJPyYG-IEei6oMba8HhH_Q" name="List&lt;TeachingTable>"/>
+</uml:Model>

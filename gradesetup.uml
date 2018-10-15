@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_CUQrAGyGEeivxeIUVkKevQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_CXHKsGyGEeivxeIUVkKevQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:id="_CXXCUGyGEeivxeIUVkKevQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_CX8RIGyGEeivxeIUVkKevQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CVG_kGyGEeivxeIUVkKevQ" name="UML">
+    <packagedElement xmi:type="uml:Class" xmi:id="_CVHmoGyGEeivxeIUVkKevQ" name="GradeSetUpAction">
+      <ownedComment xmi:id="_CVL4EGyGEeivxeIUVkKevQ">
+        <body>/** 
+ * @author wyf
+ */
+</body>
+      </ownedComment>
+      <generalization xmi:id="_CWopkGyGEeivxeIUVkKevQ" general="_CWii_myGEeivxeIUVkKevQ"/>
+      <ownedAttribute xmi:id="_CXJm8GyGEeivxeIUVkKevQ" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+        <ownedComment xmi:id="_CXLcIGyGEeivxeIUVkKevQ">
+          <body>/** 
+ */
+</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CXNRUGyGEeivxeIUVkKevQ" name="gradeSetUp" visibility="private" type="_CVMfIGyGEeivxeIUVkKevQ" association="_CZmeAGyGEeivxeIUVkKevQ"/>
+      <ownedAttribute xmi:id="_CXQ7sGyGEeivxeIUVkKevQ" name="teacherManager" visibility="private" type="_CWjKBWyGEeivxeIUVkKevQ"/>
+      <ownedAttribute xmi:id="_CXVNIGyGEeivxeIUVkKevQ" name="subTeachers" visibility="private" type="_CXT_AGyGEeivxeIUVkKevQ"/>
+      <ownedAttribute xmi:id="_CXY3gGyGEeivxeIUVkKevQ" name="classesCount" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CXch4GyGEeivxeIUVkKevQ" name="maxYear" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CXgzUGyGEeivxeIUVkKevQ" name="validCount" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CXlEwGyGEeivxeIUVkKevQ" name="validGrades" visibility="private" type="_CXiogGyGEeivxeIUVkKevQ"/>
+      <ownedAttribute xmi:id="_CXpWMGyGEeivxeIUVkKevQ" name="gradesEnableDel" visibility="private" type="_CXiogGyGEeivxeIUVkKevQ"/>
+      <ownedOperation xmi:id="_CXrycGyGEeivxeIUVkKevQ" name="getSubTeachers" visibility="public">
+        <ownedParameter xmi:id="_CXrycWyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CXu1wGyGEeivxeIUVkKevQ" name="setSubTeachers" visibility="public">
+        <ownedParameter xmi:id="_CXu1wWyGEeivxeIUVkKevQ" name="subTeachers" type="_CWii82yGEeivxeIUVkKevQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CXwq8GyGEeivxeIUVkKevQ" name="getClassesCount" visibility="public">
+        <ownedParameter xmi:id="_CXwq8WyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CXygIGyGEeivxeIUVkKevQ" name="getMaxYear" visibility="public">
+        <ownedParameter xmi:id="_CXygIWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CX0VUGyGEeivxeIUVkKevQ" name="setMaxYear" visibility="public">
+        <ownedParameter xmi:id="_CX0VUWyGEeivxeIUVkKevQ" name="maxYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CX2KgGyGEeivxeIUVkKevQ" name="getValidCount" visibility="public">
+        <ownedParameter xmi:id="_CX2KgWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CX3YoGyGEeivxeIUVkKevQ" name="setValidCount" visibility="public">
+        <ownedParameter xmi:id="_CX3YoWyGEeivxeIUVkKevQ" name="validCount">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CX5N0GyGEeivxeIUVkKevQ" name="getValidGrades" visibility="public">
+        <ownedParameter xmi:id="_CX5N0WyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CX7DAGyGEeivxeIUVkKevQ" name="setValidGrades" visibility="public">
+        <ownedParameter xmi:id="_CX7DAWyGEeivxeIUVkKevQ" name="validGrades" type="_CWii82yGEeivxeIUVkKevQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CX8RIWyGEeivxeIUVkKevQ" name="execute" visibility="public">
+        <ownedParameter xmi:id="_CX8RImyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CX-GUGyGEeivxeIUVkKevQ" name="getGradesEnableDel" visibility="public">
+        <ownedParameter xmi:id="_CX-GUWyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CX_7gGyGEeivxeIUVkKevQ" name="setGradesEnableDel" visibility="public">
+        <ownedParameter xmi:id="_CX_7gWyGEeivxeIUVkKevQ" name="gradesEnableDel" type="_CWii82yGEeivxeIUVkKevQ"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_CVMfIGyGEeivxeIUVkKevQ" name="GradeSetUp">
+      <ownedComment xmi:id="_CVO7YGyGEeivxeIUVkKevQ">
+        <body>/** 
+ * @author wyf 班级设置业务逻辑处理接口
+ */
+</body>
+      </ownedComment>
+      <ownedOperation xmi:id="_CYBJoGyGEeivxeIUVkKevQ" name="getGradeCount" visibility="public">
+        <ownedParameter xmi:id="_CYBJoWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYBJomyGEeivxeIUVkKevQ" name="getAllGrades" visibility="public">
+        <ownedParameter xmi:id="_CYBJo2yGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYBJpGyGEeivxeIUVkKevQ" name="getMaxYear" visibility="public">
+        <ownedParameter xmi:id="_CYBJpWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYBJpmyGEeivxeIUVkKevQ" name="getValidGradeCount" visibility="public">
+        <ownedParameter xmi:id="_CYBJp2yGEeivxeIUVkKevQ" name="minYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYBJqGyGEeivxeIUVkKevQ" name="maxYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYBJqWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYBwsGyGEeivxeIUVkKevQ" name="getValidAllGrades" visibility="public">
+        <ownedParameter xmi:id="_CYBwsWyGEeivxeIUVkKevQ" name="minYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYBwsmyGEeivxeIUVkKevQ" name="maxYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYBws2yGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYBwtGyGEeivxeIUVkKevQ" name="getClassesCount" visibility="public">
+        <ownedParameter xmi:id="_CYBwtWyGEeivxeIUVkKevQ" name="maxYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYBwtmyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYBwt2yGEeivxeIUVkKevQ" name="addGradeToDb" visibility="public">
+        <ownedParameter xmi:id="_CYBwuGyGEeivxeIUVkKevQ" name="grade" type="_CWjKAWyGEeivxeIUVkKevQ"/>
+        <ownedParameter xmi:id="_CYBwuWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYCXwGyGEeivxeIUVkKevQ" name="getMaxYearGrades" visibility="public">
+        <ownedParameter xmi:id="_CYCXwWyGEeivxeIUVkKevQ" name="maxYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYCXwmyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYCXw2yGEeivxeIUVkKevQ" name="getGradeBybianHao" visibility="public">
+        <ownedParameter xmi:id="_CYCXxGyGEeivxeIUVkKevQ" name="bianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYCXxWyGEeivxeIUVkKevQ" name="return" type="_CWjKAWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYC-0GyGEeivxeIUVkKevQ" name="deleteChoiceGrades" visibility="public">
+        <ownedParameter xmi:id="_CYC-0WyGEeivxeIUVkKevQ" name="gradeStrings">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CYC-0myGEeivxeIUVkKevQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CYC-02yGEeivxeIUVkKevQ"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYC-1GyGEeivxeIUVkKevQ" name="getGradeBystuXueHao" visibility="public">
+        <ownedParameter xmi:id="_CYC-1WyGEeivxeIUVkKevQ" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYC-1myGEeivxeIUVkKevQ" name="return" type="_CWjKAWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYC-12yGEeivxeIUVkKevQ" name="getALLValidGrades" visibility="public">
+        <ownedParameter xmi:id="_CYC-2GyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYC-2WyGEeivxeIUVkKevQ" name="getGradeInfos" visibility="public">
+        <ownedParameter xmi:id="_CYC-2myGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYC-22yGEeivxeIUVkKevQ" name="getGradesEnableDel" visibility="public">
+        <ownedParameter xmi:id="_CYC-3GyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYDl4GyGEeivxeIUVkKevQ" name="getYears" visibility="public">
+        <ownedParameter xmi:id="_CYDl4WyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYDl4myGEeivxeIUVkKevQ" name="getGradeInfos" visibility="public">
+        <ownedParameter xmi:id="_CYDl42yGEeivxeIUVkKevQ" name="year">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYDl5GyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYDl5WyGEeivxeIUVkKevQ" name="hasRecord" visibility="public">
+        <ownedParameter xmi:id="_CYDl5myGEeivxeIUVkKevQ" name="teacherID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYDl52yGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CVO7YWyGEeivxeIUVkKevQ" name="GradeSetUpImpl" clientDependency="_CYEM8GyGEeivxeIUVkKevQ">
+      <ownedComment xmi:id="_CVRXoGyGEeivxeIUVkKevQ">
+        <body>/** 
+ * @author wyf
+ */
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_CYFbEGyGEeivxeIUVkKevQ" name="gradeDao" visibility="private" type="_CWjKCmyGEeivxeIUVkKevQ"/>
+      <interfaceRealization xmi:id="_CYEM8GyGEeivxeIUVkKevQ" name="GradeSetUp" supplier="_CVMfIGyGEeivxeIUVkKevQ" client="_CVO7YWyGEeivxeIUVkKevQ" contract="_CVMfIGyGEeivxeIUVkKevQ"/>
+      <ownedOperation xmi:id="_CYGCIGyGEeivxeIUVkKevQ" name="getGradeCount" visibility="public">
+        <ownedParameter xmi:id="_CYGCIWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYHQQGyGEeivxeIUVkKevQ" name="getAllGrades" visibility="public">
+        <ownedParameter xmi:id="_CYHQQWyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYJFcGyGEeivxeIUVkKevQ" name="getMaxYear" visibility="public">
+        <ownedComment xmi:id="_CYKTkGyGEeivxeIUVkKevQ">
+          <body>/** 
+ * @author wyf
+ * @date 2014-3-18 上午9:44:54
+ */
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_CYJFcWyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYKTkWyGEeivxeIUVkKevQ" name="getValidGradeCount" visibility="public">
+        <ownedParameter xmi:id="_CYKTkmyGEeivxeIUVkKevQ" name="minYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYKTk2yGEeivxeIUVkKevQ" name="maxYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYKTlGyGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYLhsGyGEeivxeIUVkKevQ" name="getValidAllGrades" visibility="public">
+        <ownedParameter xmi:id="_CYLhsWyGEeivxeIUVkKevQ" name="minYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYLhsmyGEeivxeIUVkKevQ" name="maxYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYLhs2yGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYNW4GyGEeivxeIUVkKevQ" name="getClassesCount" visibility="public">
+        <ownedParameter xmi:id="_CYNW4WyGEeivxeIUVkKevQ" name="maxYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYNW4myGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYN98GyGEeivxeIUVkKevQ" name="addGradeToDb" visibility="public">
+        <ownedParameter xmi:id="_CYN98WyGEeivxeIUVkKevQ" name="grade" type="_CWjKAWyGEeivxeIUVkKevQ"/>
+        <ownedParameter xmi:id="_CYN98myGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYPMEGyGEeivxeIUVkKevQ" name="getMaxYearGrades" visibility="public">
+        <ownedParameter xmi:id="_CYPMEWyGEeivxeIUVkKevQ" name="maxYear">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYPMEmyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYPzIGyGEeivxeIUVkKevQ" name="getGradeBybianHao" visibility="public">
+        <ownedParameter xmi:id="_CYPzIWyGEeivxeIUVkKevQ" name="bianHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYPzImyGEeivxeIUVkKevQ" name="return" type="_CWjKAWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYRBQGyGEeivxeIUVkKevQ" name="deleteChoiceGrades" visibility="public">
+        <ownedParameter xmi:id="_CYRBQWyGEeivxeIUVkKevQ" name="gradeStrings">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CYRBQmyGEeivxeIUVkKevQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CYRBQ2yGEeivxeIUVkKevQ"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYSPYGyGEeivxeIUVkKevQ" name="getGradeBystuXueHao" visibility="public">
+        <ownedParameter xmi:id="_CYSPYWyGEeivxeIUVkKevQ" name="stuXueHao">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYSPYmyGEeivxeIUVkKevQ" name="return" type="_CWjKAWyGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYS2cGyGEeivxeIUVkKevQ" name="getALLValidGrades" visibility="public">
+        <ownedParameter xmi:id="_CYS2cWyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYUEkGyGEeivxeIUVkKevQ" name="getGradeInfos" visibility="public">
+        <ownedParameter xmi:id="_CYUEkWyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYUroGyGEeivxeIUVkKevQ" name="getGradesEnableDel" visibility="public">
+        <ownedParameter xmi:id="_CYUroWyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYV5wGyGEeivxeIUVkKevQ" name="getYears" visibility="public">
+        <ownedParameter xmi:id="_CYV5wWyGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYWg0GyGEeivxeIUVkKevQ" name="getGradeInfos" visibility="public">
+        <ownedParameter xmi:id="_CYWg0WyGEeivxeIUVkKevQ" name="year">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYWg0myGEeivxeIUVkKevQ" name="return" type="_CWii82yGEeivxeIUVkKevQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CYXu8GyGEeivxeIUVkKevQ" name="hasRecord" visibility="public">
+        <ownedParameter xmi:id="_CYXu8WyGEeivxeIUVkKevQ" name="teacherID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_CYXu8myGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CZmeAGyGEeivxeIUVkKevQ" memberEnd="_CXNRUGyGEeivxeIUVkKevQ _CZmeAWyGEeivxeIUVkKevQ">
+      <ownedEnd xmi:id="_CZmeAWyGEeivxeIUVkKevQ" name="GradeSetUpAction" type="_CVHmoGyGEeivxeIUVkKevQ" association="_CZmeAGyGEeivxeIUVkKevQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CWh74GyGEeivxeIUVkKevQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_CWii8GyGEeivxeIUVkKevQ" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CWii8WyGEeivxeIUVkKevQ" name="Calendar"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CWii8myGEeivxeIUVkKevQ" name="GregorianCalendar"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_CWii82yGEeivxeIUVkKevQ" name="List"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CWii9GyGEeivxeIUVkKevQ" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_CWii9WyGEeivxeIUVkKevQ" name="springframework">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CWii9myGEeivxeIUVkKevQ" name="beans">
+        <packagedElement xmi:type="uml:Package" xmi:id="_CWii92yGEeivxeIUVkKevQ" name="factory">
+          <packagedElement xmi:type="uml:Package" xmi:id="_CWii-GyGEeivxeIUVkKevQ" name="annotation">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_CWii-WyGEeivxeIUVkKevQ" name="Autowired"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_CWii-myGEeivxeIUVkKevQ" name="Qualifier"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_CWjKB2yGEeivxeIUVkKevQ" name="stereotype">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_CWjKCGyGEeivxeIUVkKevQ" name="Service"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CWii-2yGEeivxeIUVkKevQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_CWii_GyGEeivxeIUVkKevQ" name="opensymphony">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CWii_WyGEeivxeIUVkKevQ" name="xwork2">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_CWii_myGEeivxeIUVkKevQ" name="ActionSupport"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CWii_2yGEeivxeIUVkKevQ" name="xscj">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CWjKAGyGEeivxeIUVkKevQ" name="domain">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_CWjKAWyGEeivxeIUVkKevQ" name="Grade"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_CWjKAmyGEeivxeIUVkKevQ" name="SubTeacher"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_CWjKBmyGEeivxeIUVkKevQ" name="GradeInfo"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_CWjKA2yGEeivxeIUVkKevQ" name="service">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_CWjKBGyGEeivxeIUVkKevQ" name="GradeSetUp"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_CWjKBWyGEeivxeIUVkKevQ" name="TeacherManager"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_CWjKCWyGEeivxeIUVkKevQ" name="dao">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_CWjKCmyGEeivxeIUVkKevQ" name="GradeDao"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_CXT_AGyGEeivxeIUVkKevQ" name="List&lt;SubTeacher>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_CXiogGyGEeivxeIUVkKevQ" name="List&lt;Grade>"/>
+</uml:Model>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_m_YDwHCGEeiZyvEmDtpk8A">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_nAsSYHCGEeiZyvEmDtpk8A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_nAuHkHCGEeiZyvEmDtpk8A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_m_Yq0HCGEeiZyvEmDtpk8A" name="uml">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_m_ZR4HCGEeiZyvEmDtpk8A" name="CoursePlan">
+      <ownedOperation xmi:id="_nAs5cHCGEeiZyvEmDtpk8A" name="getCourseCount" visibility="public">
+        <ownedParameter xmi:id="_nAs5cXCGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAs5cnCGEeiZyvEmDtpk8A" name="getAllCourses" visibility="public">
+        <ownedParameter xmi:id="_nAs5c3CGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAs5dHCGEeiZyvEmDtpk8A" name="addCourseToDb" visibility="public">
+        <ownedParameter xmi:id="_nAs5dXCGEeiZyvEmDtpk8A" name="course" type="_nAXiRnCGEeiZyvEmDtpk8A"/>
+        <ownedParameter xmi:id="_nAs5dnCGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAuHkXCGEeiZyvEmDtpk8A" name="getCoursesByGradeAndXueQi" visibility="public">
+        <ownedParameter xmi:id="_nAuHknCGEeiZyvEmDtpk8A" name="GradeStr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nAuHk3CGEeiZyvEmDtpk8A" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nAuHlHCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAuHlXCGEeiZyvEmDtpk8A" name="getValidCourseCount" visibility="public">
+        <ownedParameter xmi:id="_nAuHlnCGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAuHl3CGEeiZyvEmDtpk8A" name="getValidAllCourses" visibility="public">
+        <ownedParameter xmi:id="_nAuHmHCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAuHmXCGEeiZyvEmDtpk8A" name="deleteChoiceCourses" visibility="public">
+        <ownedParameter xmi:id="_nAuHmnCGEeiZyvEmDtpk8A" name="courseIDs">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nAuHm3CGEeiZyvEmDtpk8A" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nAuHnHCGEeiZyvEmDtpk8A"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAuuoHCGEeiZyvEmDtpk8A" name="getCourseByCourseID" visibility="public">
+        <ownedParameter xmi:id="_nAuuoXCGEeiZyvEmDtpk8A" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nAuuonCGEeiZyvEmDtpk8A" name="return" type="_nAXiRnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAuuo3CGEeiZyvEmDtpk8A" name="getAllCourseInfos" visibility="public">
+        <ownedParameter xmi:id="_nAuupHCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAuupXCGEeiZyvEmDtpk8A" name="getCoursesEnableDel" visibility="public">
+        <ownedParameter xmi:id="_nAuupnCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_m_Z48HCGEeiZyvEmDtpk8A" name="CoursePlanImpl" clientDependency="_nAuup3CGEeiZyvEmDtpk8A">
+      <ownedAttribute xmi:id="_nAvVsHCGEeiZyvEmDtpk8A" name="courseDao" visibility="private" type="_m_buIXCGEeiZyvEmDtpk8A" association="_nB-r0HCGEeiZyvEmDtpk8A"/>
+      <interfaceRealization xmi:id="_nAuup3CGEeiZyvEmDtpk8A" name="CoursePlan" supplier="_m_ZR4HCGEeiZyvEmDtpk8A" client="_m_Z48HCGEeiZyvEmDtpk8A" contract="_m_ZR4HCGEeiZyvEmDtpk8A"/>
+      <ownedOperation xmi:id="_nAv8wHCGEeiZyvEmDtpk8A" name="getCourseCount" visibility="public">
+        <ownedComment xmi:id="_nAwj0HCGEeiZyvEmDtpk8A">
+          <body>/** 
+ * @author wyf 得到课程总数业务逻辑处理实现类
+ */
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_nAv8wXCGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAwj0XCGEeiZyvEmDtpk8A" name="getAllCourses" visibility="public">
+        <ownedComment xmi:id="_nAxK4HCGEeiZyvEmDtpk8A">
+          <body>/** 
+ * @author wyf 得到所有课程列表业务逻辑处理实现类
+ */
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_nAwj0nCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAxK4XCGEeiZyvEmDtpk8A" name="addCourseToDb" visibility="public">
+        <ownedParameter xmi:id="_nAxK4nCGEeiZyvEmDtpk8A" name="course" type="_nAXiRnCGEeiZyvEmDtpk8A"/>
+        <ownedParameter xmi:id="_nAxK43CGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAxx8HCGEeiZyvEmDtpk8A" name="getCoursesByGradeAndXueQi" visibility="public">
+        <ownedParameter xmi:id="_nAxx8XCGEeiZyvEmDtpk8A" name="GradeStr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nAxx8nCGEeiZyvEmDtpk8A" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nAxx83CGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAyZAHCGEeiZyvEmDtpk8A" name="getValidCourseCount" visibility="public">
+        <ownedParameter xmi:id="_nAyZAXCGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAzAEHCGEeiZyvEmDtpk8A" name="getValidAllCourses" visibility="public">
+        <ownedParameter xmi:id="_nAzAEXCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nAznIHCGEeiZyvEmDtpk8A" name="deleteChoiceCourses" visibility="public">
+        <ownedParameter xmi:id="_nAznIXCGEeiZyvEmDtpk8A" name="courseIDs">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nA0OMHCGEeiZyvEmDtpk8A" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nA0OMXCGEeiZyvEmDtpk8A"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nA01QHCGEeiZyvEmDtpk8A" name="getCourseByCourseID" visibility="public">
+        <ownedParameter xmi:id="_nA01QXCGEeiZyvEmDtpk8A" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nA01QnCGEeiZyvEmDtpk8A" name="return" type="_nAXiRnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nA1cUHCGEeiZyvEmDtpk8A" name="getAllCourseInfos" visibility="public">
+        <ownedParameter xmi:id="_nA1cUXCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nA2DYHCGEeiZyvEmDtpk8A" name="getCoursesEnableDel" visibility="public">
+        <ownedParameter xmi:id="_nA2DYXCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_m_agAHCGEeiZyvEmDtpk8A" name="JdbcCourseDao" clientDependency="_nA2qcHCGEeiZyvEmDtpk8A">
+      <ownedComment xmi:id="_m_buIHCGEeiZyvEmDtpk8A">
+        <body>/** 
+ * @author wyf
+ */
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_nA34kHCGEeiZyvEmDtpk8A" name="jdbcTemplate" visibility="private" type="_nAYwbHCGEeiZyvEmDtpk8A"/>
+      <interfaceRealization xmi:id="_nA2qcHCGEeiZyvEmDtpk8A" name="CourseDao" supplier="_m_buIXCGEeiZyvEmDtpk8A" client="_m_agAHCGEeiZyvEmDtpk8A" contract="_m_buIXCGEeiZyvEmDtpk8A"/>
+      <ownedOperation xmi:id="_nA5twHCGEeiZyvEmDtpk8A" name="getCourseCount" visibility="public">
+        <ownedComment xmi:id="_nA674HCGEeiZyvEmDtpk8A">
+          <body>/** 
+ * @author wyf 得到课程总数底层操作JDBC实现
+ */
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_nA5twXCGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nA674XCGEeiZyvEmDtpk8A" name="getAllCourses" visibility="public">
+        <ownedComment xmi:id="_nA8KAHCGEeiZyvEmDtpk8A">
+          <body>/** 
+ * @author wyf 得到所有课程列表底层操作JDBC实现
+ */
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_nA674nCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nA8xEHCGEeiZyvEmDtpk8A" name="addCourseToDb" visibility="public">
+        <ownedParameter xmi:id="_nA8xEXCGEeiZyvEmDtpk8A" name="course" type="_nAXiRnCGEeiZyvEmDtpk8A"/>
+        <ownedParameter xmi:id="_nA8xEnCGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nA9_MHCGEeiZyvEmDtpk8A" name="getCoursesByGradeAndXueQi" visibility="public">
+        <ownedParameter xmi:id="_nA9_MXCGEeiZyvEmDtpk8A" name="GradeStr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nA9_MnCGEeiZyvEmDtpk8A" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nA9_M3CGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nA_0YHCGEeiZyvEmDtpk8A" name="getValidCourseCount" visibility="public">
+        <ownedParameter xmi:id="_nA_0YXCGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBBpkHCGEeiZyvEmDtpk8A" name="getValidAllCourses" visibility="public">
+        <ownedParameter xmi:id="_nBBpkXCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBDewHCGEeiZyvEmDtpk8A" name="deleteChoiceCourses" visibility="public">
+        <ownedParameter xmi:id="_nBDewXCGEeiZyvEmDtpk8A" name="courseIDs">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nBDewnCGEeiZyvEmDtpk8A" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nBDew3CGEeiZyvEmDtpk8A"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBEs4HCGEeiZyvEmDtpk8A" name="getCourseByCourseID" visibility="public">
+        <ownedParameter xmi:id="_nBEs4XCGEeiZyvEmDtpk8A" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nBEs4nCGEeiZyvEmDtpk8A" name="return" type="_nAXiRnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBGiEHCGEeiZyvEmDtpk8A" name="getAllCourseInfos" visibility="public">
+        <ownedParameter xmi:id="_nBGiEXCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBHwMHCGEeiZyvEmDtpk8A" name="getCoursesEnableDel" visibility="public">
+        <ownedParameter xmi:id="_nBHwMXCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_m_buIXCGEeiZyvEmDtpk8A" name="CourseDao">
+      <ownedOperation xmi:id="_nBI-UHCGEeiZyvEmDtpk8A" name="getCourseCount" visibility="public">
+        <ownedParameter xmi:id="_nBI-UXCGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBI-UnCGEeiZyvEmDtpk8A" name="getAllCourses" visibility="public">
+        <ownedParameter xmi:id="_nBI-U3CGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBJlYHCGEeiZyvEmDtpk8A" name="addCourseToDb" visibility="public">
+        <ownedParameter xmi:id="_nBJlYXCGEeiZyvEmDtpk8A" name="course" type="_nAXiRnCGEeiZyvEmDtpk8A"/>
+        <ownedParameter xmi:id="_nBJlYnCGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBJlY3CGEeiZyvEmDtpk8A" name="getCoursesByGradeAndXueQi" visibility="public">
+        <ownedParameter xmi:id="_nBJlZHCGEeiZyvEmDtpk8A" name="GradeStr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nBJlZXCGEeiZyvEmDtpk8A" name="xueqi">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nBJlZnCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBJlZ3CGEeiZyvEmDtpk8A" name="getValidCourseCount" visibility="public">
+        <ownedParameter xmi:id="_nBJlaHCGEeiZyvEmDtpk8A" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBJlaXCGEeiZyvEmDtpk8A" name="getValidAllCourses" visibility="public">
+        <ownedParameter xmi:id="_nBJlanCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBJla3CGEeiZyvEmDtpk8A" name="deleteChoiceCourses" visibility="public">
+        <ownedParameter xmi:id="_nBJlbHCGEeiZyvEmDtpk8A" name="courses">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nBJlbXCGEeiZyvEmDtpk8A" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nBJlbnCGEeiZyvEmDtpk8A"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBKMcHCGEeiZyvEmDtpk8A" name="getCourseByCourseID" visibility="public">
+        <ownedParameter xmi:id="_nBKMcXCGEeiZyvEmDtpk8A" name="courseID">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_nBKMcnCGEeiZyvEmDtpk8A" name="return" type="_nAXiRnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBKMc3CGEeiZyvEmDtpk8A" name="getAllCourseInfos" visibility="public">
+        <ownedParameter xmi:id="_nBKMdHCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_nBKMdXCGEeiZyvEmDtpk8A" name="getCoursesEnableDel" visibility="public">
+        <ownedParameter xmi:id="_nBKMdnCGEeiZyvEmDtpk8A" name="return" type="_nAXiQnCGEeiZyvEmDtpk8A" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nB-r0HCGEeiZyvEmDtpk8A" memberEnd="_nAvVsHCGEeiZyvEmDtpk8A _nB-r0XCGEeiZyvEmDtpk8A">
+      <ownedEnd xmi:id="_nB-r0XCGEeiZyvEmDtpk8A" name="CoursePlanImpl" type="_m_Z48HCGEeiZyvEmDtpk8A" association="_nB-r0HCGEeiZyvEmDtpk8A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_nAXiQHCGEeiZyvEmDtpk8A" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_nAXiQXCGEeiZyvEmDtpk8A" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_nAXiQnCGEeiZyvEmDtpk8A" name="List"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_nAYwaHCGEeiZyvEmDtpk8A" name="ArrayList"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_nAYwZHCGEeiZyvEmDtpk8A" name="sql">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_nAYwZXCGEeiZyvEmDtpk8A" name="PreparedStatement"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_nAYwZnCGEeiZyvEmDtpk8A" name="ResultSet"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_nAYwZ3CGEeiZyvEmDtpk8A" name="SQLException"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_nAXiQ3CGEeiZyvEmDtpk8A" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_nAXiRHCGEeiZyvEmDtpk8A" name="xscj">
+      <packagedElement xmi:type="uml:Package" xmi:id="_nAXiRXCGEeiZyvEmDtpk8A" name="domain">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_nAXiRnCGEeiZyvEmDtpk8A" name="Course"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_nAXiR3CGEeiZyvEmDtpk8A" name="CourseInfo"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_nAYwYHCGEeiZyvEmDtpk8A" name="dao">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_nAYwYXCGEeiZyvEmDtpk8A" name="CourseDao"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_nAYwYnCGEeiZyvEmDtpk8A" name="service">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_nAYwY3CGEeiZyvEmDtpk8A" name="CoursePlan"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_nAYJUHCGEeiZyvEmDtpk8A" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_nAYJUXCGEeiZyvEmDtpk8A" name="springframework">
+      <packagedElement xmi:type="uml:Package" xmi:id="_nAYJUnCGEeiZyvEmDtpk8A" name="beans">
+        <packagedElement xmi:type="uml:Package" xmi:id="_nAYJU3CGEeiZyvEmDtpk8A" name="factory">
+          <packagedElement xmi:type="uml:Package" xmi:id="_nAYJVHCGEeiZyvEmDtpk8A" name="annotation">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_nAYJVXCGEeiZyvEmDtpk8A" name="Autowired"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_nAYJVnCGEeiZyvEmDtpk8A" name="Qualifier"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_nAYJV3CGEeiZyvEmDtpk8A" name="stereotype">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_nAYJWHCGEeiZyvEmDtpk8A" name="Service"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_nAYwbnCGEeiZyvEmDtpk8A" name="Repository"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_nAYwaXCGEeiZyvEmDtpk8A" name="jdbc">
+        <packagedElement xmi:type="uml:Package" xmi:id="_nAYwanCGEeiZyvEmDtpk8A" name="core">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_nAYwa3CGEeiZyvEmDtpk8A" name="BatchPreparedStatementSetter"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_nAYwbHCGEeiZyvEmDtpk8A" name="JdbcTemplate"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_nAYwbXCGEeiZyvEmDtpk8A" name="RowCallbackHandler"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

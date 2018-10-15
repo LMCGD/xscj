@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ou92YGyGEeivxeIUVkKevQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_owSFAGyGEeivxeIUVkKevQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_owSFAWyGEeivxeIUVkKevQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ou-dcGyGEeivxeIUVkKevQ" name="UML">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ou-dcWyGEeivxeIUVkKevQ" name="JdbcAdministratorDaoImpl" clientDependency="_ov8GwGyGEeivxeIUVkKevQ">
+      <ownedComment xmi:id="_ou_EgGyGEeivxeIUVkKevQ">
+        <body>/** 
+ * @author wyf
+ */
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_ov9U4GyGEeivxeIUVkKevQ" name="jdbcTemplate" visibility="private" type="_ov2nNGyGEeivxeIUVkKevQ"/>
+      <interfaceRealization xmi:id="_ov8GwGyGEeivxeIUVkKevQ" name="AdministratorDao" supplier="_ovASoGyGEeivxeIUVkKevQ" client="_ou-dcWyGEeivxeIUVkKevQ" contract="_ovASoGyGEeivxeIUVkKevQ"/>
+      <ownedOperation xmi:id="_owSsEGyGEeivxeIUVkKevQ" name="isExisits" visibility="public">
+        <ownedParameter xmi:id="_owSsEWyGEeivxeIUVkKevQ" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_owSsEmyGEeivxeIUVkKevQ" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_owSsE2yGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_owTTIGyGEeivxeIUVkKevQ" name="updatePass" visibility="public">
+        <ownedParameter xmi:id="_owTTIWyGEeivxeIUVkKevQ" name="adminName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_owTTImyGEeivxeIUVkKevQ" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ou_EgWyGEeivxeIUVkKevQ" name="AdministratorManagerImpl" clientDependency="_owT6MGyGEeivxeIUVkKevQ">
+      <ownedComment xmi:id="_ou_rkGyGEeivxeIUVkKevQ">
+        <body>/** 
+ * @author wyf
+ */
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_owUhQGyGEeivxeIUVkKevQ" name="administratorDao" visibility="private" type="_ovASoGyGEeivxeIUVkKevQ" association="_oxJAoGyGEeivxeIUVkKevQ"/>
+      <interfaceRealization xmi:id="_owT6MGyGEeivxeIUVkKevQ" name="AdministratorManager" supplier="_ovASoWyGEeivxeIUVkKevQ" client="_ou_EgWyGEeivxeIUVkKevQ" contract="_ovASoWyGEeivxeIUVkKevQ"/>
+      <ownedOperation xmi:id="_owVIUGyGEeivxeIUVkKevQ" name="isExisits" visibility="public">
+        <ownedParameter xmi:id="_owVIUWyGEeivxeIUVkKevQ" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_owVIUmyGEeivxeIUVkKevQ" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_owVIU2yGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_owVvYGyGEeivxeIUVkKevQ" name="updatePass" visibility="public">
+        <ownedParameter xmi:id="_owVvYWyGEeivxeIUVkKevQ" name="adminName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_owVvYmyGEeivxeIUVkKevQ" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_ovASoWyGEeivxeIUVkKevQ" name="AdministratorManager">
+      <ownedOperation xmi:id="_owW9gGyGEeivxeIUVkKevQ" name="isExisits" visibility="public">
+        <ownedParameter xmi:id="_owW9gWyGEeivxeIUVkKevQ" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_owW9gmyGEeivxeIUVkKevQ" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_owW9g2yGEeivxeIUVkKevQ" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_owW9hGyGEeivxeIUVkKevQ" name="updatePass" visibility="public">
+        <ownedParameter xmi:id="_owW9hWyGEeivxeIUVkKevQ" name="adminName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_owW9hmyGEeivxeIUVkKevQ" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oxJAoGyGEeivxeIUVkKevQ" memberEnd="_owUhQGyGEeivxeIUVkKevQ _oxJAoWyGEeivxeIUVkKevQ">
+      <ownedEnd xmi:id="_oxJAoWyGEeivxeIUVkKevQ" name="AdministratorManagerImpl" type="_ou_EgWyGEeivxeIUVkKevQ" association="_oxJAoGyGEeivxeIUVkKevQ"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ov2AIGyGEeivxeIUVkKevQ" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ov2AIWyGEeivxeIUVkKevQ" name="springframework">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ov2AImyGEeivxeIUVkKevQ" name="beans">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ov2AI2yGEeivxeIUVkKevQ" name="factory">
+          <packagedElement xmi:type="uml:Package" xmi:id="_ov2nMGyGEeivxeIUVkKevQ" name="annotation">
+            <packagedElement xmi:type="uml:DataType" xmi:id="_ov2nMWyGEeivxeIUVkKevQ" name="Autowired"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_ov2nO2yGEeivxeIUVkKevQ" name="Qualifier"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ov2nMmyGEeivxeIUVkKevQ" name="jdbc">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ov2nM2yGEeivxeIUVkKevQ" name="core">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_ov2nNGyGEeivxeIUVkKevQ" name="JdbcTemplate"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ov2nNWyGEeivxeIUVkKevQ" name="stereotype">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ov2nNmyGEeivxeIUVkKevQ" name="Repository"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ov2nPGyGEeivxeIUVkKevQ" name="Service"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ov2nN2yGEeivxeIUVkKevQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ov2nOGyGEeivxeIUVkKevQ" name="xscj">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ov2nOWyGEeivxeIUVkKevQ" name="dao">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ov2nOmyGEeivxeIUVkKevQ" name="AdministratorDao"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ov2nPWyGEeivxeIUVkKevQ" name="service">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ov2nPmyGEeivxeIUVkKevQ" name="AdministratorManager"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_ovASoGyGEeivxeIUVkKevQ" name="AdministratorDao">
+    <ownedOperation xmi:id="_owWWcGyGEeivxeIUVkKevQ" name="isExisits" visibility="public">
+      <ownedParameter xmi:id="_owWWcWyGEeivxeIUVkKevQ" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_owWWcmyGEeivxeIUVkKevQ" name="password">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_owWWc2yGEeivxeIUVkKevQ" name="return" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_owWWdGyGEeivxeIUVkKevQ" name="updatePass" visibility="public">
+      <ownedParameter xmi:id="_owWWdWyGEeivxeIUVkKevQ" name="adminName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_owWWdmyGEeivxeIUVkKevQ" name="password">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+</uml:Model>
